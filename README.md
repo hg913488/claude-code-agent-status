@@ -61,9 +61,9 @@ No. It only watches events Claude Code already sends and draws the panel. Nothin
 
 ## Watch it
 
-[![A 28-second tour of a multi-agent run](assets/screens/film-poster.jpg)](assets/agent-status-tour.mp4)
+https://github.com/user-attachments/assets/682cf3bd-6fc6-40d4-acdb-a6e93d602c59
 
-A 28-second tour of a multi-agent run. Click to play.
+A 28-second tour of a multi-agent run.
 
 ---
 
