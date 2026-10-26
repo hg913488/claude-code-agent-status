@@ -65,6 +65,12 @@ https://github.com/user-attachments/assets/682cf3bd-6fc6-40d4-acdb-a6e93d602c59
 
 A 28-second tour of a multi-agent run.
 
+## More Claude Code mods
+
+- [Retro Chat](https://github.com/hg913488/claude-code-retro-skins): iMessage, MSN, AIM and IRC skins for your chat
+- [Remind](https://github.com/hg913488/claude-code-reminders): "remind me to…" with due dates above the prompt
+- [Hyperspace](https://github.com/hg913488/claude-code-hyperspace): a space-opera spinner and a blade that ignites
+
 ---
 
 MIT licensed. Made by [HG](https://github.com/hg913488).
