@@ -1,0 +1,27 @@
+# Agent Status
+
+> A Claude Code mod that opens a side panel showing what the main thread and each subagent is doing, how far along it is and which model it runs on.
+
+Agent Status adds the `/agent-status` command to Claude Code. The panel updates by itself while Claude works. It lists the main thread and the 12 most recent subagents, with each one's current action, progress (tasks done out of total, or an estimate) and elapsed time. It only watches events Claude Code already sends. MIT licensed.
+
+Install in Claude Code:
+
+```
+/plugin install agent-status --marketplace hg913488/claude-code-agent-status
+```
+
+## Docs
+
+- [README](https://github.com/hg913488/claude-code-agent-status/blob/main/README.md): what the panel shows, install, FAQ
+- [AGENTS.md](https://github.com/hg913488/claude-code-agent-status/blob/main/AGENTS.md): repo layout, how it works, checks and conventions for coding agents
+
+## Source
+
+- [hooks/register.tsx](https://github.com/hg913488/claude-code-agent-status/blob/main/hooks/register.tsx): the whole mod: event handlers, state and panel UI
+- [types/index.d.ts](https://github.com/hg913488/claude-code-agent-status/blob/main/types/index.d.ts): `Task` and `Thread` types
+- [tests/panel.test.tsx](https://github.com/hg913488/claude-code-agent-status/blob/main/tests/panel.test.tsx): the panel test
+- [.claude-plugin/plugin.json](https://github.com/hg913488/claude-code-agent-status/blob/main/.claude-plugin/plugin.json): plugin manifest
+
+## Optional
+
+- [LICENSE](https://github.com/hg913488/claude-code-agent-status/blob/main/LICENSE): MIT

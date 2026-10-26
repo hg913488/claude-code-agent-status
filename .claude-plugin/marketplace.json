@@ -1,0 +1,6 @@
+{
+  "name": "agent-status",
+  "owner": { "name": "HG" },
+  "description": "A side panel of what the main thread and each subagent is doing.",
+  "plugins": [{ "name": "agent-status", "source": "./" }]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "agent-status",
+  "version": "0.1.1",
+  "description": "A side panel showing what the main thread and each subagent is doing, its progress and its model",
+  "author": { "name": "HG", "url": "https://github.com/hg913488" },
+  "homepage": "https://github.com/hg913488/claude-code-agent-status",
+  "repository": "https://github.com/hg913488/claude-code-agent-status",
+  "license": "MIT",
+  "keywords": ["subagents", "agents", "status", "panel", "pane", "progress", "monitor"],
+  "types": "./types/index.d.ts"
+}
