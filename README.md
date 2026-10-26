@@ -1,8 +1,18 @@
-# Agent Status for Claude Code: see what every subagent is doing
+<p align="center"><img src="assets/social-preview.jpg" alt="Agent Status for Claude Code: see what every subagent is doing" width="100%"></p>
 
-Agent Status is a Claude Code mod that opens a side panel showing what the main thread and each subagent is doing right now, how far along it is and which model it runs on. Type `/agent-status`.
+<h1 align="center">Agent Status for Claude Code: see what every subagent is doing</h1>
 
-![The Agent Status panel beside a Claude Code chat, with three subagents running](assets/agent-status.gif)
+<p align="center">Agent Status is a Claude Code mod that opens a side panel showing what the main thread and each subagent is doing right now, how far along it is and which model it runs on. Type <code>/agent-status</code>.</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="MIT licence" src="https://img.shields.io/badge/licence-MIT-2f81f7"></a>
+  <img alt="Claude Code mod" src="https://img.shields.io/badge/Claude%20Code-mod-d97757">
+  <img alt="version 0.1.1" src="https://img.shields.io/badge/version-0.1.1-555">
+</p>
+
+<p align="center"><a href="#install">Install</a> · <a href="#what-it-looks-like">What it looks like</a> · <a href="#faq">FAQ</a> · <a href="#watch-it">Watch the tour</a></p>
+
+<p align="center"><img src="assets/agent-status.gif" alt="The Agent Status panel beside a Claude Code chat, with three subagents running"></p>
 
 ## Install
 
@@ -15,6 +25,12 @@ In Claude Code:
 Then type `/agent-status` to open the panel. It updates by itself while Claude works.
 
 In the desktop app, click **+** next to the prompt box → **Plugins** → **Add marketplace** → `hg913488/claude-code-agent-status` → **Add plugin**.
+
+## What it looks like
+
+<p align="center"><img src="assets/screens/agent-running.png" alt="Agent Status panel while three subagents run: main thread delegating, a Haiku helper with a progress bar" width="100%"><br><sub><b>While they run</b> · what each one is doing, its model and progress</sub></p>
+
+<p align="center"><img src="assets/screens/agent-done.png" alt="Agent Status panel after the run: main thread idle, 0 running of 3 total, the helper marked done" width="100%"><br><sub><b>When they finish</b> · ✓ done, and how long each took</sub></p>
 
 ## What the panel shows
 
@@ -45,7 +61,9 @@ No. It only watches events Claude Code already sends and draws the panel. Nothin
 
 ## Watch it
 
-[A 28-second tour of a multi-agent run](assets/agent-status-tour.mp4)
+[![A 28-second tour of a multi-agent run](assets/screens/film-poster.jpg)](assets/agent-status-tour.mp4)
+
+A 28-second tour of a multi-agent run. Click to play.
 
 ---
 
