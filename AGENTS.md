@@ -17,7 +17,7 @@ has run. It is one TSX hooks module. There is no server and no build step.
 - `tests/panel.test.tsx`: the one test. Drives events, mounts the panel, checks the text.
 - `.claude-plugin/plugin.json`: plugin name, version, metadata, `types` path.
 - `.claude-plugin/marketplace.json`: makes the repo installable as a marketplace.
-- `.claude-plugin/types/`: vendored `claude-code` type declarations and the tsconfig `tsconfig.json` extends. Do not hand-edit.
+- `.claude-plugin/types/`: `claude-code` type declarations and the tsconfig `tsconfig.json` extends. The engine writes this folder when it loads the mod. It is not in the repo. Do not hand-edit.
 - `assets/`: images for the README and social preview.
 
 ## How it works
@@ -41,7 +41,9 @@ The mod reads `.claude/mods/switches.json` (every 3 seconds). If it has
 
 ## Checks
 
-Run from the repo root. All three must pass.
+Run from the repo root. All three must pass. The `tsc` check needs
+`.claude-plugin/types/`, so on a fresh clone load the mod once first, in an
+interactive `claude --plugin-dir .` session.
 
 ```
 claude plugin test .

@@ -34,8 +34,8 @@ In the desktop app, click **+** next to the prompt box → **Plugins** → **Add
 
 ## What the panel shows
 
-- **The main thread** at the top: its model (`OPUS 5.5`) and whether it's running, done or idle.
-- **Every subagent** below it, labelled by type (`EXPLORE`, `PLAN`), with its model. A subagent on a different model from the main thread is shown in another colour, so a cheaper Haiku helper stands out.
+- **The main thread** at the top: its model (`OPUS 5.5`) and whether it's running, idle or failed.
+- **Every subagent** below it, labelled by type (`EXPLORE`, `PLAN`), with its model.
 - **What each one is doing**, in plain words: `reading register.tsx`, `searching web: tauri notarize`, `delegating to Explore`.
 - **Progress**: tasks done out of total (`3/5 tasks`) when Claude keeps a task list, or an estimate (`~60%`) from the steps taken so far.
 - **Time**: how long each one has been running, ticking every second.
@@ -48,7 +48,7 @@ It keeps the main thread plus the 12 most recent subagents.
 Install the mod and type `/agent-status`. The panel lists each subagent with its current action, progress and model.
 
 **Which model is each subagent using?**
-The panel shows it next to each name, like `haiku 5.5`. One that differs from the main thread's model is highlighted.
+The panel shows it next to each name, like `haiku 5.5`.
 
 **Is the percentage exact?**
 Only when Claude keeps a task list: then it's tasks done out of total. Without one it's an estimate from the steps taken, and it never shows more than 90% until the agent finishes.
